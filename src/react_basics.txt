@@ -1,0 +1,373 @@
+What is react?
+React is a open source javascript Library.
+react is used for buliding user interfcaes(UI).
+React simplifies the creation od single page application by using resluable components
+
+What are key features of react?
+1.vitrual DoM
+2.resuable components.
+3.component based Architrcture
+4.JSx (javascripy XML)
+5.Declarative syntax
+6.commounity ecosystem 
+7.Hooks
+
+1.vitual DOM :
+Virtual DOm is an in - memory represenattaion of the real DOM.
+What ever presents in real DOM, it is having the same, when ever any changes done in real it takes the only the changes and update in DOM.
+it improves the performance of Application.
+
+2.Reusability & Composition:
+It react enables the creation of resuable componnets that can be composed together
+and can be used anywhere in application.
+
+3.component based:
+react structures user interfcae as modular, it will divide into components, it gives the maintaniblity and scalable approce to bulid the app.
+
+4.JSx(javascript XML):
+JSX is a syntax textension for the javascript used in the react
+allow users to write html like code with javascript, enhacning readability and maintianbility.
+
+5.Declarative syntax:
+React have a Declarative programming style(JSX), where developrs focus on the UI should look like
+and react handles the how behind the scenes,this simplfy the code.
+
+6.commounity and Ecosystem.
+react benifits from a vibrant and extensive community,contributing to arich ecosystem
+of libraries,tools and resources.
+
+7.Hooks:
+Hooks, are functions that enables the functional components to manage the state mand life cycle methods
+which provides a more concise and expressive way to hanlde component logic.
+
+What is DOM? what is diffrence B/w HTML and DOM?
+DOm is (Doucment object Model) represents the web page as tree like struture which allows javascript
+to dynamically access and manipluate the content and struecture of a web page.
+
+What is Virtual DOM? diff b/w virtual DOm and real DOm?
+React uses a virtual DOm to efficent upadte the UI without render the entire page , whcihc helps improve the 
+performance and make the application more responsive
+
+diffrence
+DoM
+1.Dom is actual represenation of webpage.
+2.re renders the entire page when upadtes occur
+3.can be slower especially with frequent updates.
+4. suitable for static websites and simple applications
+
+Vitrual DOM
+1.its s lightweight copy of the DOM.
+2.when there is any changes then only re renders
+3.optimized for faster rerendering
+4.ideal for dynamic and complex single page applications with frequesnt updates.
+
+What are react components? what are the main elements of it.
+React components are buliding block for creating user interfaces.
+everything in react is like components, like header and footer sindenav ecosystem
+
+What is SPA(Single page Application)
+A single page Aplication is web application that have only single web page.
+whenever user do some action on the webiste, then in response is dynamically updated without refreshing or loading a new page
+
+What are 5 advantages of react?
+1.Simple to bulid Single page (by using resuable componnets)
+2.React is cross platfrom and open source libraray
+3.lightweight and very faster
+4.Large community and Ecosystem.
+5.test is easy.
+
+What are the disadantages of react?
+Its not good for the small applications.
+
+What is role of jsx in react?
+1. JSX stands javascript XML
+2.jsx is used by react to write HTML like code
+3.JSX is converted to javscript via tools like babel.beacuse browser will understand javasccript not jsx
+
+What is diffrence b/w Declarative and impertaive?
+// Declarative
+Declarative syntax focus on describing the desired reslut without specigying the step by step process
+JSX in react used to write the declarive syntax
+
+impertaive
+Impertaive syntax invoves step by step process to achive a prticular goal
+Javascript has an impertaive syntax
+
+What is arrow function expression?
+syntax is diffrence it like fat arrow function
+the arrow function expression syntax is aconsie way of defining functions
+const Arrowfunc =(props) =>{
+    retrun(
+        <div?>{props.name} </div?
+    )
+};
+export default Arrowfunc;
+
+How to setup react project?
+1. install nodejs
+2.install VScode
+3.install react app - npx create-react-app my-app(app name)
+4.npm start (to start/run application)
+
+
+What are main files in react project?
+index.html - single page for react application.
+componnets - your application components
+App.js - Main componnet or container or root component
+App.test - for writing unit test cases
+index.css -its aglobal css file that servesd the main stylesheet for enitr app
+index.js - entry point for javascript. renders main react components in the root DOM elements
+
+How does the react app load and display the components in bowser?
+index.html file load , then from there index.js will load that is entry point from there it will call the root
+component called the app.jsx from here child components will call.
+
+What is diff b/w react and angular ?
+Both are used to create single page UI applications using components.
+
+//react
+1.It is javascript libraray.
+2.react uses a virtual DOM, which makes a faster
+3.Recact is smaller size and lightwright andf therefore faster sometime.
+4. react depends on external libraries for many complex features, so dveloper ha to write many lines of code for complex function
+5.react is simple to learn and more popular than angular.
+
+
+
+
+//Angular
+1. Angualr is a complete framework
+2.Angualr uses a real DOM
+3.Angualr is bigger beacuse it is complete framework.
+4.since angular is complete frame work there fore it provde built in support for features like routing, forms AND HTTP 
+4.Angular is slightly difficult to lrean as it has , typescript , opps concept and amny more
+
+What are 5 js framework orther than react?
+angualr js
+emberjs
+angular
+vue js
+backbone.js
+
+whether react is framework or libraray?
+1.developers import the libraries at the topthen use its functions in components.
+2.react is commonly referred to as hjavascript.
+1.Developers need to follow a spefic sturrcture or pattren defined by the frame work.
+2.angular is framework.
+
+How react provide resuablity and Composition?
+react provides reusabilty and compostio through its component based architecture.
+// resuablity
+once you create a componnet, you can re-use it in diffrenets parts
+of your application or even in mulitple projects.
+
+//Composition
+creating a new big components by combining existing small compnents.its advantage is , chnage to one
+small componets will not impact other components.
+
+What are state, stateless,stateful and state management terms?
+State refers to the current data of the component.
+stateful or state management means, when a user perfoms some actions on the UI
+then the react application should be able to updateand render that data or state on the UI
+stateless means when you try to update something on UI, after intial State
+ not updating or re rednring the state the it is stateless component.
+
+
+What are props in jsx?
+porps/properties
+props are a way yo pass data from parent component to child component
+<childComponent name ="divya />
+function Childcomponent(props){
+    retrun <div>{props.name} </div>
+}
+
+what is NPM? what is role of node_modules?
+npm(node package manager)
+NPM is used to manage the dependencies for your react project.
+including react library itself.
+
+Node modules folder contains all the dependencies of the project
+including the react libraries.
+
+What is the role of pubilc folder in react?
+Public floder contains the static assets that served directly 
+to the users's browser such as images, fonts, and then index,html file 
+
+What is the src floders in react?
+src floders used to store  all the source code of the application which is then responsible
+for the dynamic changes in your application.
+
+what is purpose of index.html?
+it is insdie the public floder
+index.html file is the main html file(SPA) in react application
+Here the div with "id=root" will be replaced by the component inside index.js file
+
+what is role of index.js file and reactDOM in react?
+React Dom is javascript library that renders componets to the DOm or Browser
+The index.js file is the javascript file that replaces the root relement of the inedx.html file with the newly rendered components.
+
+what is the role of app.js?
+defulat component of react is app.js
+  app,js file contain the root componet of react application.
+  app component is like container for other components
+  app.js defines the structure ,root and layout in the application.
+
+what is role of function and retrun inside the app.js?
+function keyword is uses to define a javascript function that represents your react component.
+it is like a placeholder which contians all the code or logic of component.
+it takes in props as its argument and retruns jsx.
+retrun is used to retrun the ements from the function
+
+
+can we have a function without a retrun inside app.js?
+No , to show reslut or to retrun elements we need retrun function.
+yes, when you no need to retrun any elements.
+
+what is role of export default inside app.js?
+export statement is used to make a component avalibale for import using "import" statement in other files
+
+JSX
+What is the role of JSX?
+Jsx stands for javascript XML
+jsx is used by react to write HTML -like code
+jsx is converted into javascript by tools like babel.
+beause browser undersatnd only javascript not jsx
+
+Advantages of JSX
+1.type safety
+2.imporve code readlibity and writebility
+3.support javascript expressions
+4.imporved performance
+5.code resuablity
+
+what is babel?
+babel in react is used to trasplie JSX syntax into regular javascript which 
+browser can understand.
+
+what is role of fragment in jsx?
+<> </> fragment
+In react , a fragment is away to group multiple childer's element.
+using a fragment prevents the addition of unnecessary nodes to the DOM.
+
+What is spread Operator in jsx?(...)
+it is used to spread /expand an array or object.
+<ChildComponents>{...props}</ChildComponents>
+
+What are the types of conditional rendering in jsx?
+1.if elese
+2.ternary Operator
+3.&& operator 
+4.Switch statement.
+
+how do you iterarte over a list in jsx? what is map method?
+const numbers =[1,2,3,4,5,6]
+numbers.map((num) =>numbers*2)
+it allows you to iterate over an array and modify its element using a callback function.
+
+can a browser reac a jsx file?
+No,browser cannot directly interpret or understand jsx files
+babel takes jsx and converts it into equivalent javascript code that browser can undersatnd
+
+what is transplier? what is diff b/w compiler & transplier
+transplier : it is tool that converts source code from one high level programming
+langugae to another high level programming langugae
+example:babel
+complier: it is atool that converts high level programming langugae to low
+level programming language(machine code or bhytecode)
+
+
+Components -Functional.Class
+What are react components? what are main elements of it?
+In react a component is aresuable buliding block for creating interfaces
+export , import nad function retrun are main elements of react component
+
+What are types of react components? what are functional components?
+1.Functional components
+functional components are declared as javascript functions
+they are stateless component, but with the help of hooks they can now manage state also.
+2.class components
+class components are defined using javascript classes
+they are stateful compoents by using lifecycle methods
+render method in a class component is responsible for retruning Jsx
+
+how do you pass data b/w components in functional ?
+props are the way to pass data from one component to child componengt
+
+What is prop drilling?
+Props drilling is the process of passing dwon the props through multiple layers of compoments.
+parent => child => Grand child
+
+Why to avaoid prop drilling?in how many ways props drilling?
+Maintenance: prop drilling can make code harder to maintian as chnages in data 
+complexity: it increase code complexity
+debugging : debugging becomes challenging when props need to be traced through numnerous components
+
+5 ways to avaoud prop drilling:
+1.using context API 
+2.Using redux
+3.uing callbacks
+4.Using custom hooks
+
+how to pass data b/w class components
+this.props can be used in child component to access properties/data passed from parent component.
+<ChildCompoent message={dataToSend} />
+in child component
+<p>message:{this.props.message} </p>
+here this keyword is used to refer to the instance of the class.
+
+diffrence between functional and class componets
+
+1.syntax : defined as a JS function.          1. Defined as JS(ES6)class
+2.Originally stateless but can now
+maintain state using hooks                    2.can manage local state with this.state
+3.lifecycle :No                               3.yes
+4.readability:more readable and concise.      4.Verbose(complex)
+5.this keyword: no                            5.yes
+6.Do not have render method                   6.Have render method.
+
+
+Routing 
+What is Routing and router in react?
+Routing allows you to create a single page web application with navigation
+without full page refresh.
+
+React router is a library for handling routing and nables the navigation 
+and rendering diffrenet components bsed on the URL
+
+command to install router -- npm install react-router-Dom
+create navigation- here you have to create navigation links using LInk tag in app.js
+create routes - here create routes using route tag and path you have to gives
+finally in index.js wrap app.js in router 
+
+What are roles of <Routes> and <Route> in react router?
+The Routes componnet is used as the root container for declaring your collection of routes.
+The <route> component is used to define aroute and specify the component that should 
+render when the router matches.
+For example, in this code if user enter websitename.com/about in url, thenmatching
+"about"component will be render
+
+what are route parameters in react routing?
+Route parameters in react route are a way to pass dynamic values to the component as part of the URL path
+<Route path ="/users/:userId"
+
+What is the role od switch component in routing?
+switch component ensures that only the first matching <Route> is rendered and rest are ingonred
+for example, switch is commonly used to handle 404 or "not found"routes.
+
+what is the role of exact prop in react routing?
+exact prop is used with the <route> component to match exactly to the provided path.
+<Route path="/about" exact componet ={About} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
