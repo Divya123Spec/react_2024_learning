@@ -1,0 +1,82 @@
+What are component life cycle phases?
+1.mounting phase
+2.Updating Phase 
+3.Unmounting Phase
+
+1.Mounting Phase(component creation phase)
+This phase occurs when an instace of a component is being created and inserted into the DOM
+2.Updating Phase (component updates)
+This phase occurs when a component is being rerendered as a reslut of changes to either its props or state.
+3.Unmounting Phase(Removal from the DOM)
+This phase occurs when a component is being removed from the DOM.
+
+What are component Life Cycle methods?
+component lifecycle methods aee special methods that get called at various stages of a component's life
+Mounting Phase:
+constructor() //
+getDerivedStateFromProps()
+render()
+componentDidmount()
+
+Updating Phase:
+getDerivedStateFromProps()
+ShouldComponentUpdate()
+render()
+getsnapshotBeforeUpdate()
+ComponentDidUpdate()
+
+Unmounting Phase()
+componentwillUnmount()
+
+ constructor() - This is the first method that gets called when a component is created
+ constructor is a special method that is called when instace of the class is created.
+ it is used for intializing the component or performing any setup that is needed before the component is used
+ constructor is called with props as an argument
+ Super keyword is used to call the constructor of the parent class
+
+ getDerivedStateFromProps() - This is the second method that gets called when a component is created
+getDerivedStateFromProps is a static method that is called when the component is created and whenever the props of the component change
+
+render() - This is the third method that gets called when a component is created
+ render is a method that returns the JSX that should be rendered by the component
+ render is a pure method that does not modify the component state or props
+
+// componentDidMount() - This is the fourth method that gets called when a component is created
+// componentDidMount is called after the component is rendered for the first time
+// componentDidMount is used for performing any side effects that require the component to be rendered
+// componentDidMount is called only once in the component lifecycle
+
+// getDerivedStateFromProps() - This is the first method that gets called when a component is updated
+
+// getDerivedStateFromProps is a static method that is called when the component is updated and whenever the props of the component change
+// getDerivedStateFromProps is used to update the state of the component based on the props
+
+// shouldComponentUpdate() - This is the second method that gets called when a component is updated
+// shouldComponentUpdate is called before the component is updated
+// shouldComponentUpdate is used to determine if the component should re-render or not
+// shouldComponentUpdate is called with the next props and the next state as arguments
+// shouldComponentUpdate should return a boolean value
+
+// render() - This is the third method that gets called when a component is updated
+// render is a method that returns the JSX that should be rendered by the component
+// render is a pure method that does not modify the component state or props
+
+// getSnapshotBeforeUpdate() - This is the fourth method that gets called when a component is updated
+// getSnapshotBeforeUpdate is called before the component is updated
+// getSnapshotBeforeUpdate is used to capture some information from the DOM before the update
+// getSnapshotBeforeUpdate is called with the previous props and the previous state as arguments
+
+// componentDidUpdate() - This is the fifth method that gets called when a component is updated
+// componentDidUpdate is called after the component is updated
+// componentDidUpdate is used for performing any side effects that require the component to be updated
+
+// Unmounting Phase:
+// componentWillUnmount() - This is the method that gets called when a component is unmounted
+// componentWillUnmount is called before the component is removed from the DOM
+// componentWillUnmount is used for performing any cleanup that is needed before the component is removed
+
+
+How the state can be Miantained in class component?
+Two step process to maintain state:
+this,setState()method is used to update the state.
+this.state property is used to render the update state in DOM.

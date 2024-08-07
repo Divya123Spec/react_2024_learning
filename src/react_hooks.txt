@@ -1,0 +1,16 @@
+Hooks
+React hooks are in built functions provided by react that allow functional components
+to use state and lifecycle methods
+Before hooks,class components lifecycle methods are used to maintain state in react applications
+To use react hooks first we have to import it from react library
+import React,{useState} from "react"
+
+react Hooks:
+1.useState  - statemanagemt
+2.useEffect - side effects (api calls)
+3.useContext -context
+4.useReducer -complex state
+5.useCallback - Memoization
+6.useMemo -perfomance
+7.useref - refs
+8.useLayouteffect -synronous side effects
