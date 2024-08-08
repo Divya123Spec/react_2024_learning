@@ -14,3 +14,9 @@ react Hooks:
 6.useMemo -perfomance
 7.useref - refs
 8.useLayouteffect -synronous side effects
+
+
+Interceptpors
+before going to backend we can intercept request and response
+i want to check the api before going into the backend so i will attch the authorisation
+code to the api so backne dteam will check , when its not correct they send back the response in status code.
