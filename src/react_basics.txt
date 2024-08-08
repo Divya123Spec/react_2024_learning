@@ -446,8 +446,22 @@ In React, className is used instead of class in JSX to avoid conflicts with Java
 integrated smoothly with JavaScript while still mapping to the correct HTML attributes.
 
 
+In React, when working with class components, the super keyword is used in the constructor method to call the parent class's constructor. 
+This is necessary to properly initialize the component and its state.
 
 
+What is hgerr order component
+higer order component is a component which takes another component as an argument and retruns extra fetures to anothe rcomponent
+it used for providing logging functionality to all the components in aresuable ways
+
+Three ways to achive state management
+1.useState hooks - simple compoennt level
+2.Usecontext - create context, provider, consumer,Usecontext -- to avaoid prop drilling,simplty data passing thrugh the componets
+3.redux - large and complex state, having centrazlied store and actions provide a statemanagement
 
 
-
+optimize react
+1.memoization
+2.react.framgament
+3.lazy loading
+4.code spliting

@@ -9,7 +9,7 @@ function Hook_useeffect() {
       const response = await fetch("https://catfact.ninja/fact");
       const reslut = await response.json();
       setData(reslut);
-      console.log(reslut);
+      console.log(JSON.stringify(reslut.fact));
     };
     fetchData(); // calling the function
   }, []); // here array is the second argument (array of dependencies)
