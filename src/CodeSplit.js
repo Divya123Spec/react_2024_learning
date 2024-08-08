@@ -24,3 +24,28 @@ export default CodeSplit;
 
 // Suspense is a component that is used to wrap the lazy loaded component.
 // it is used to display fallback UI while the alzily loaded component is being loaded.
+
+// what are pros and cons of code spliting?\
+// prons
+// 1.Reduces the initial load time of the application.
+// 2.Improves the performance of the application.
+// 3.optimize the bandwidth usgae by loading only the required code.
+// 4.parallel loading of the code chunks.
+// 5.easier to maintain and update the code.
+
+// cons
+// 1.complexity in managing the code spliting.
+// 2.increases the number of requests to the server.
+//3.Tooling dependencies are required to implement code spliting.
+//4.runtime erros
+//5.Learing curve for developers.
+
+// import function in code spliting
+// import React, { lazy, Suspense } from "react";
+// const CodeSplit = lazy(() => import("./CodeSplit"));
+//The import function returns a promise that allow dynamic loading of the module.
+
+// What is the purpsoe of the fallback prop in suspense component?
+// the fallback prop provides a loading indicator ,
+//  while the dynamic imported component is beigng loaded.
+//  it is displayed until the component is loaded.

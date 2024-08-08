@@ -16,6 +16,11 @@ What are key features of react?
 Virtual DOm is an in - memory represenattaion of the real DOM.
 What ever presents in real DOM, it is having the same, when ever any changes done in real it takes the only the changes and update in DOM.
 it improves the performance of Application.
+Render Phase: The component’s render method is called, creating a new Virtual DOM tree.
+This tree represents the updated state of the component.
+React uses a diffing algorithm to determine the differences between the previous Virtual DOM and the new Virtual DOM.
+Comparison: React compares the new Virtual DOM tree with the previous one. This is done efficiently by comparing nodes and their properties.
+
 
 2.Reusability & Composition:
 It react enables the creation of resuable componnets that can be composed together
@@ -359,11 +364,86 @@ exact prop is used with the <route> component to match exactly to the provided p
 <Route path="/about" exact componet ={About} />
 
 
+Higher order component?
+An Hoc is function
+that takes argument as function and retruns an new component, 
+typcally wraps original component and inject additional porps .for resuablity and seapartion of concerns
 
 
+In React, the choice between using class components and functional components depends on various factors, including complexity, requirements, and personal or team preferences. Here’s a detailed guide on when to use each:
+
+Class Components
+Class components are the traditional way of defining components in React. They have been a fundamental part of React before the introduction of Hooks.
+
+When to Use Class Components:
+Legacy Codebases:
+
+Existing Code: If you’re working in a codebase that already heavily uses class components, it might make sense to continue using them for consistency.
+Lifecycle Methods:
+
+Lifecycle Hooks: Before Hooks were introduced, class components were the only way to use lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. If you’re working with older code or if you need specific lifecycle methods that are complex to replicate with Hooks, class components are suitable.
+Complex State Management:
+
+State Logic: For complex state management or when dealing with multiple stateful logic pieces, class components can be more straightforward due to their explicit state and lifecycle management.
+Error Boundaries:
+
+Error Handling: Error boundaries (components that catch JavaScript errors anywhere in their child component tree) are implemented using class components.
+Third-Party Libraries:
+
+Library Integration: Some older third-party libraries or integrations might be designed with class components in mind, although this is becoming less common.
+Example of a Class Component:
+jsx
+Copy code
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  componentDidMount() {
+    console.log('Component mounted');
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
+Functional Components
+Functional components are a simpler way to define components in React, especially with the introduction of Hooks. 
+They are often preferred for their simplicity and ease of use
+1.simplicity
+2.Hooks
+3.Performance
+4.code resuablity
+
+When to Use Class Components:
+1.Legacy Codebases:
+2.Lifecycle Methods: before hooks implememnted this only way to implement life cycle mentods
+3.Complex State Management:For complex state management or when dealing with multiple stateful logic pieces, 
+class components can be more straightforward due to their explicit state and lifecycle management.
+
+// when you create a class based component, in background react creates a functional component and then it will render the class based component
+so 3 step process, but they remove that in functional component
 
 
-
+why we use calss name instead of class in react?
+In React, className is used instead of class in JSX to avoid conflicts with JavaScript's reserved keyword class. This approach ensures that JSX can be 
+integrated smoothly with JavaScript while still mapping to the correct HTML attributes.
 
 
 

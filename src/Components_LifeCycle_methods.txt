@@ -80,3 +80,5 @@ How the state can be Miantained in class component?
 Two step process to maintain state:
 this,setState()method is used to update the state.
 this.state property is used to render the update state in DOM.
+
+//usesof react life cycle methods
