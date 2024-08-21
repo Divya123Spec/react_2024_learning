@@ -6,6 +6,7 @@ import UseContext from "./UseContext";
 import Controlled_component from "./Controlled_component";
 import { use } from "i18next";
 import Parent from "./Parent";
+import UseStates from "./UseStates";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
@@ -20,6 +21,7 @@ function App() {
   return (
     <div>
       <div className="App">React App</div>
+      <UseStates></UseStates>
       <Hook_usestate />
       <Hook_useeffect />
       <UseContext />
@@ -50,26 +52,24 @@ export default App;
 //   }
 // });
 
-// null: Passing null as the dependency array is technically invalid and will cause an error in development mode, 
+// null: Passing null as the dependency array is technically invalid and will cause an error in development mode,
 // such as a warning or an error message. React expects the dependency array to be either an array or omitted.
 
 // useEffect(() => {
 //   console.log('This will cause an error');
 // }, null); // React will throw an error or warning
 
-// undefined: Similarly, passing undefined as the dependency array is also not valid and will cause an error or warning. 
+// undefined: Similarly, passing undefined as the dependency array is also not valid and will cause an error or warning.
 // React does not treat undefined as a valid dependency array.
 
 // useEffect(() => {
 //   console.log('This will also cause an error');
 // }, undefined); // React will throw an error or warning
 
-// If you do not pass a dependency array to the useEffect hook in React, 
-// the effect will run after every render of the component. This is different from passing an empty array ([]), 
+// If you do not pass a dependency array to the useEffect hook in React,
+// the effect will run after every render of the component. This is different from passing an empty array ([]),
 // which causes the effect to run only once after the initial render.
 
 // useEffect(() => {
 //   console.log('Effect runs after every render');
 // });
-
-

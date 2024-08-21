@@ -1,0 +1,21 @@
+what is Hook?
+Hooks are special functions, that allow us to use State and other react
+features in functional component.
+
+before 16.8 version for using state management and life cycle methods we don't have in functional components
+after 16.8 version of react we can manage lifecycle methods and state management by hooks
+without using class components
+
+benifits of react hooks?
+React hooks simplifies the code, imporve readability, resuablity
+and overall perfomance of the application
+
+examples
+useState
+useEffect
+useRef
+useMemo
+Usecontext
+useReducer
+useLayoutEffect
+

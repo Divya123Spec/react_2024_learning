@@ -10,8 +10,11 @@ function Controlled_component() {
   };
 
   const handleClick = () => {
-    const value = inputRef.current.value;
-    alert(value);
+    if (inputRef.current) {
+      const value = inputRef.current.value;
+      console.log(inputRef.current);
+      alert(value);
+    }
   };
   return (
     <>
@@ -23,7 +26,7 @@ function Controlled_component() {
         placeholder="Enter some text"
       ></input>
       <input type="text" ref={inputRef} placeholder="Enter some text"></input>
-      <button onClick={handleClick}>Click</button>
+      <button onClick={handleClick}>ClickRef</button>
     </>
   );
 }
