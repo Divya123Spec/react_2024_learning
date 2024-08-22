@@ -17,7 +17,11 @@ function UseStates() {
     });
   };
   const Increment = () => {
-    setCount(count + 1);
+    // wnhen you want to increase the count by 1
+    // setCount(count + 1);
+    // when you want to increse the count by 4
+    setCount((count) => count + 4);
+
     console.log(count);
   };
 
@@ -46,3 +50,5 @@ function UseStates() {
 
 export default UseStates;
 // The useState hook enbales the functional component to manage the state.
+// The useState hook returns an array with two elements.
+// The first element is the current state value and the second element is a function that allows you to update the state.

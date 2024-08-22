@@ -7,6 +7,12 @@ import Controlled_component from "./Controlled_component";
 import { use } from "i18next";
 import Parent from "./Parent";
 import UseStates from "./UseStates";
+import UseRef from "./UseRef";
+import UseMemo from "./UseMemo";
+import UseCallback from "./UseCallback";
+import UseLayout from "./UseLayout";
+import UseReducer from "./UseReducer";
+import Custom_hook from "./Custom_hook";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
@@ -26,6 +32,13 @@ function App() {
       <Hook_useeffect />
       <UseContext />
       <Parent />
+      <UseRef />
+      <UseMemo />
+      <UseCallback />
+      <UseLayout />
+      <UseReducer />
+      <Custom_hook />
+
       <Controlled_component></Controlled_component>
       <Suspense fallback={<div>Loading...</div>}>
         <CodeSplit />

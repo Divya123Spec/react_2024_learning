@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 function Hook_useeffect() {
   const [data, setData] = useState(null);
   const [userId, setUserId] = useState(1);
+  const [count, setCount] = useState(0);
+  const [name, setName] = useState("John");
+
   useEffect(() => {
     // here function is the first argument
     const fetchData = async () => {
@@ -14,12 +17,22 @@ function Hook_useeffect() {
     fetchData(); // calling the function
   }, []); // here array is the second argument (array of dependencies)
 
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((prevCount) => prevCount + 1);
+      setName("Doe");
+    }, 2000); // after 2 seconds the count will increase by 1, if you add a dependency in the array then it will increase by 1 after every render
+  }, [count, name]); //when you add a dependency in the array then it will increase by 1 after every render(only once it will increase by 1)
+  // when you put the count in the array then it will increase by 1 after every render
+
   return (
     <div>
       <h1>
         Hook_useeffect
         <pre>{JSON.stringify(data, null, 2)}</pre>
       </h1>
+      <h1>I have rendered {count} times!</h1>
+      <h4>{name}</h4>
     </div>
   );
 }
@@ -42,3 +55,8 @@ export default Hook_useeffect;
 // If you pass an empty array, it will only run once after the initial render.
 // If you pass a value, it will run every time that value changes.
 // empty array means no dependencies and it will run only once after the initial render.
+
+// examples of side effects
+// 1. fetching data from an api
+// 2. updating the DOM directly
+// 3.Timers and intervals(setTimeout, setInterval, clearInterval)
