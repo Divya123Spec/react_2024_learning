@@ -13,6 +13,7 @@ import UseCallback from "./UseCallback";
 import UseLayout from "./UseLayout";
 import UseReducer from "./UseReducer";
 import Custom_hook from "./Custom_hook";
+import Throttling_Debounce from "./Throttling_Debounce";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
@@ -38,6 +39,7 @@ function App() {
       <UseLayout />
       <UseReducer />
       <Custom_hook />
+      <Throttling_Debounce />
 
       <Controlled_component></Controlled_component>
       <Suspense fallback={<div>Loading...</div>}>

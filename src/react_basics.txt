@@ -465,3 +465,8 @@ optimize react
 2.react.framgament
 3.lazy loading
 4.code spliting
+
+
+JSX
+it stands for javscript xml, its a syntax extension for javascript, that allows us to
+write the html like structure within javascript code.
