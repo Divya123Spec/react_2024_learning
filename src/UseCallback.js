@@ -1,8 +1,9 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Header from "../src/components/Header";
 
 function UseCallback() {
   const [count, setCount] = useState(0);
+  const [data, setData] = useState(null);
 
   const buttonClick = () => {
     setCount(count + 1);

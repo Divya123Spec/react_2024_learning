@@ -13,15 +13,16 @@ why we use calss name instead of class in react?
 how do you handle errtor in react js
 what is error bopundary in react
 forward ref
-interceptors 
+interceptors
 react fiber
- What is React ?
+What is React ?
 How React is diff. from Angular & Vue.js ?
- Explain state & props ?
- How to pass data from child to parent in class-based as well as functional-based component?
- Explain Life cycle methods  in class-based as well as functional-based component?
- Explain Hooks in react?
+Explain state & props ?
+How to pass data from child to parent in class-based as well as functional-based component?
+Explain Life cycle methods in class-based as well as functional-based component?
+Explain Hooks in react?
 What will happen if we pass null or undefined instead of empty array of useEffect hook as second argument ?
- What is Redux ?
- Why do we need to use Redux middleware to perform asynchronous activity ?
+What is Redux ?
+Why do we need to use Redux middleware to perform asynchronous activity ?
 What is Redux Saga vs Redux Thunk ?
+custom hook

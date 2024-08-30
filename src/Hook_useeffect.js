@@ -11,7 +11,8 @@ function Hook_useeffect() {
     const fetchData = async () => {
       const response = await fetch("https://catfact.ninja/fact");
       const reslut = await response.json();
-      setData(reslut);
+      setData([reslut]);
+      console.log(typeof reslut, "hook_useeffect");
     };
     fetchData(); // calling the function
   }, []); // here array is the second argument (array of dependencies)
@@ -26,15 +27,14 @@ function Hook_useeffect() {
 
   return (
     <div>
-      <h1>
-        Hook_useeffect
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-      </h1>
-      {/* {data.map((item) => (
-          <div key={item.id}>
-            <h2>{item.title}</h2>
-            <p>{item.body}</p>
-          </div>} */}
+      <h1>Hook_useeffect</h1>
+      {data &&
+        data.map((item) => (
+          <div>
+            <h1 key={item.id}></h1>
+            <h1>{item.fact} Factttttttttttttt</h1>
+          </div>
+        ))}
       <h1>I have rendered {count} times!</h1>
       <h4>{name}</h4>
     </div>
