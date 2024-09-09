@@ -17,6 +17,8 @@ function Hook_useeffect() {
     fetchData(); // calling the function
   }, []); // here array is the second argument (array of dependencies)
 
+
+
   useEffect(() => {
     setTimeout(() => {
       setCount((prevCount) => prevCount + 1);

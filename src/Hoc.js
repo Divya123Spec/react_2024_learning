@@ -26,7 +26,7 @@ export default Hoc;
 
 // HOC
 // Advanced method of resuing component functionlity  logic.
-// it simple takes the original component and returns a new component with additional functionality.
+// it simply takes the original component and returns a new component with additional functionality.
 // easy to handle
 // no need to copy same logic everywhere
 // makes code more readable.

@@ -18,6 +18,7 @@ import ApiCall_custom from "./ApiCall_custom";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
+
   console.log(1);
   setTimeout(function () {
     console.log(2);

@@ -11,10 +11,11 @@ React hooks simplifies the code, imporve readability, resuablity
 and overall perfomance of the application
 
 examples
-useState
+useState 
 useEffect
 useRef
 useMemo
+useCallback
 Usecontext
 useReducer
 useLayoutEffect
