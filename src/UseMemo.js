@@ -7,8 +7,8 @@ function UseMemo() {
   function cubeNumber() {
     console.log("cubeNumber called");
     return Math.pow(number, 3);
-   
   }
+
   const result = useMemo(() => {
     // here we are using useMemo hook to cache the value of cubeNumber function
     return cubeNumber();
