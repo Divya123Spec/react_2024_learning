@@ -15,6 +15,7 @@ import UseReducer from "./UseReducer";
 import Custom_hook from "./Custom_hook";
 import Throttling_Debounce from "./Throttling_Debounce";
 import ApiCall_custom from "./ApiCall_custom";
+import FilterData from "./FilterData";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
@@ -41,12 +42,14 @@ function App() {
       <UseLayout />
       <UseReducer />
       <Custom_hook />
+      <FilterData />
       <Throttling_Debounce />
       <ApiCall_custom />
       <Controlled_component></Controlled_component>
       <Suspense fallback={<div>Loading...</div>}>
         <CodeSplit />
       </Suspense>
+
     </div>
   );
 }
