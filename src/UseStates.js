@@ -17,7 +17,7 @@ function UseStates() {
     });
   };
   const Increment = () => {
-    // wnhen you want to increase the count by 1
+    // when you want to increase the count by 1
     // setCount(count + 1);
     // when you want to increse the count by 4
     setCount((count) => count + 4);

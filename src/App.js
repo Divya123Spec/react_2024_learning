@@ -48,7 +48,6 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <CodeSplit />
       </Suspense>
-
     </div>
   );
 }
