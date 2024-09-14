@@ -4,7 +4,6 @@ import Hook_usestate from "./Hook_usestate";
 import Hook_useeffect from "./Hook_useeffect";
 import UseContext from "./UseContext";
 import Controlled_component from "./Controlled_component";
-import { use } from "i18next";
 import Parent from "./Parent";
 import UseStates from "./UseStates";
 import UseRef from "./UseRef";

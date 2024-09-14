@@ -1,4 +1,4 @@
-import "./styles.css";
+
 import React, { useState, useEffect } from "react";
 
  function FilterData() {
@@ -9,7 +9,8 @@ import React, { useState, useEffect } from "react";
       const response = await fetch("https://dummyjson.com/users");
       const result = await response.json();
       setData(result.users);
-      console.log(result.users);
+      console.log("filtered data", typeof result.users);
+      console.log(Array.isArray(result.users));
     };
     FetchData();
   }, []);
