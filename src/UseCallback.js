@@ -12,7 +12,8 @@ function UseCallback() {
 
   return (
     <div>
-      <Header newFunc={newFunc} />
+      <Header newFunc={newFunc} /> // this is the Header component passing
+      callback function as props
       <h1>UseCallback {count}</h1>
       <button onClick={buttonClick}> Count</button>
     </div>
