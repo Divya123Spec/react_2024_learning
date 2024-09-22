@@ -41,7 +41,9 @@ export default CodeSplit;
 //5.Learing curve for developers.
 
 // import function in code spliting
-// import React, { lazy, Suspense } from "react";
+// import React, { lazy, Suspense } from "react"
+
+;
 // const CodeSplit = lazy(() => import("./CodeSplit"));
 //The import function returns a promise that allow dynamic loading of the module.
 

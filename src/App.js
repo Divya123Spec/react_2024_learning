@@ -15,6 +15,7 @@ import Custom_hook from "./Custom_hook";
 import Throttling_Debounce from "./Throttling_Debounce";
 import ApiCall_custom from "./ApiCall_custom";
 import FilterData from "./FilterData";
+import Stopwatch from "./StopWatch";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
@@ -44,6 +45,7 @@ function App() {
       <FilterData />
       <Throttling_Debounce />
       <ApiCall_custom />
+      <Stopwatch />
       <Controlled_component></Controlled_component>
       <Suspense fallback={<div>Loading...</div>}>
         <CodeSplit />
@@ -70,6 +72,9 @@ export default App;
 //   }
 // });
 
+
+// undefined or null: The effect runs after every render, 
+// meaning it will execute after the initial render and on every subsequent re-render.
 // null: Passing null as the dependency array is technically invalid and will cause an error in development mode,
 // such as a warning or an error message. React expects the dependency array to be either an array or omitted.
 
@@ -91,3 +96,14 @@ export default App;
 // useEffect(() => {
 //   console.log('Effect runs after every render');
 // });
+
+
+// If you pass 0 instead of an array, React will treat it as if no dependency array was passed at all. 
+// This causes the useEffect to behave differently from when you pass an empty array.
+
+// Effect runs: On every render because React treats it as undefined,
+//  meaning the effect will not be optimized, and it will run after every render.
+// Passing 0 is not valid for the dependency array. React expects an array as the second argument.
+
+// When you pass 0, React ignores it and behaves as if no dependency array was provided. 
+// In this case, useEffect will execute after every render.

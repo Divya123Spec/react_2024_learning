@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header({newFunc}) {
   console.log("Header component");
   return (
     <div>

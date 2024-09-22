@@ -81,3 +81,21 @@ function Throttling_Debounce() {
 }
 
 export default Throttling_Debounce;
+
+
+// Throtting
+// How It Works:
+// The function throttle() keeps track of the last time the event was triggered.
+// If the function is called again before the specified delay, it will be ignored.
+// Only after the delay has passed, it will trigger the function again.
+
+// debouncing
+// How It Works:
+// The function debounce() waits for a specified time (e.g., 1000ms) before executing the function.
+// If the event is triggered again within that time, the previous timer is cleared and reset.
+// Only when the event stops being triggered for the defined delay will the function be executed.
+
+// Visual Example:
+// Throttling: If a scroll event fires continuously for 10 seconds and you're throttling it to execute every 1 second, 
+// it will execute the callback once every second during the scroll.
+// Debouncing: If a user types in a search box, the function will only execute after they stop typing for a defined delay (e.g., 300ms).

@@ -470,3 +470,16 @@ optimize react
 JSX
 it stands for javscript xml, its a syntax extension for javascript, that allows us to
 write the html like structure within javascript code.
+
+
+
+Webpack is a powerful module bundler commonly used in modern JavaScript applications, 
+including those built with React. 
+It allows developers to bundle JavaScript files, stylesheets, images, and other assets into a single 
+output file or a smaller number of files that can be efficiently loaded by a web browser.
+
+Key Features of Webpack:
+Module Bundling
+Loaders
+Plugins
+Tree Shaking: Webpack can analyze your code and eliminate unused exports, reducing the final bundle size
