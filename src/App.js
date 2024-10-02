@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense,useEffect } from "react";
 import "./App.css";
 import Hook_usestate from "./Hook_usestate";
 import Hook_useeffect from "./Hook_useeffect";
@@ -16,9 +16,15 @@ import Throttling_Debounce from "./Throttling_Debounce";
 import ApiCall_custom from "./ApiCall_custom";
 import FilterData from "./FilterData";
 import Stopwatch from "./StopWatch";
+import SampleUnitTest from "./SampleUnitTest";
 
 function App() {
   const CodeSplit = lazy(() => import("./CodeSplit"));
+
+useEffect(() => {
+  console.log("Hello")
+  //componentDidMount
+}); 
 
   console.log(1);
   setTimeout(function () {
@@ -47,6 +53,7 @@ function App() {
       <ApiCall_custom />
       <Stopwatch />
       <Controlled_component></Controlled_component>
+      <SampleUnitTest></SampleUnitTest>
       <Suspense fallback={<div>Loading...</div>}>
         <CodeSplit />
       </Suspense>
@@ -107,3 +114,6 @@ export default App;
 
 // When you pass 0, React ignores it and behaves as if no dependency array was provided. 
 // In this case, useEffect will execute after every render.
+
+// Shrepread lottiee
+// 0 every render , it understand ngt passed to it
