@@ -26,7 +26,7 @@ function UseMemo() {
       <h1>UseMemo component </h1>
       <input type="number" value={number} onChange={numberChange} />
       <h1>Cube of the number:{result}</h1>
-      <button onClick={onButtonClick}>Counter++</button>
+      <button onClick={onButtonClick}>Counter++</button> // not for this example
       <h1>Counter: {counter}</h1>
     </div>
   );
