@@ -49,3 +49,19 @@ describe('SampleUnitTest', () => {
    expect(textEle).toBeInTheDocument();
   });
 });
+
+
+// A basic test in Jest is written using the following methods:
+
+// describe(): Groups together related tests.
+// test() or it(): Defines a single test.
+// expect(): Sets up assertions to check expected outcomes.
+// beforeEach() / afterEach(): Set up or clean up conditions before or after each test.
+
+
+// Explanation:
+// render(): Renders the component in a virtual DOM for testing.
+// screen.getByText(): Finds the element that contains specific text.
+// expect(): Asserts that the button is rendered (toBeInTheDocument()) and that the click event has been fired.
+// fireEvent.click(): Simulates a click event on the rendered element.
+// jest.fn(): Creates a mock function to check if it has been called (useful for event handlers).

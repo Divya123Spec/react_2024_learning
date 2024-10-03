@@ -117,3 +117,7 @@ export default App;
 
 // Shrepread lottiee
 // 0 every render , it understand ngt passed to it
+
+//  when you pass empty dependecy and refresh the page , 
+// the entire React component tree is unmounted and then re-mounted so that 
+// The useEffect will run again after the refresh because the component is being re-mounted
