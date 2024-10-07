@@ -1,6 +1,6 @@
 What Is React Fiber, and Why Was It Introduced?
 
-Answer: React Fiber is a reimplementation of React core algorithm for rendering and updating the UI. 
+Answer: React Fiber is a re-implementation of React core algorithm for rendering and updating the UI. 
 It was introduced to improve the responsiveness of React applications by 
 breaking down the rendering work into smaller chunks and allowing interruption and prioritization of tasks. 
 This makes React more efficient and capable of handling complex, high-priority updates.
