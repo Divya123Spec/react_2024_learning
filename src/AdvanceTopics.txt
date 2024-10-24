@@ -1,0 +1,28 @@
+What Is React Fiber, and Why Was It Introduced?
+
+Answer: React Fiber is a re-implementation of React core algorithm for rendering and updating the UI. 
+It was introduced to improve the responsiveness of React applications by 
+breaking down the rendering work into smaller chunks and allowing interruption and prioritization of tasks. 
+This makes React more efficient and capable of handling complex, high-priority updates.
+
+ What Is Server-Side Rendering (SSR) in React, and Why Is It Beneficial?
+ Server-Side Rendering (SSR) in React involves rendering the initial HTML on the server 
+ and sending it to the client. SSR offers benefits like faster initial page loads, 
+ improved SEO(search Engine Optimization), and better perceived performance. 
+ It’s beneficial for applications that require SEO optimization or faster time-to-interactive.
+
+
+ How Do You Optimize the Performance of a React Application?
+Answer: To optimize React application performance, you can:
+Use shouldComponentUpdate, PureComponent, or memoization to prevent unnecessary renders.
+Profile your app with tools like React DevTools and Chrome DevTools to identify performance bottlenecks.
+Implement lazy loading and code splitting to reduce initial bundle size.
+Use server-side rendering (SSR) for faster initial rendering.
+Employ caching mechanisms for data fetching.
+Minimize the use of expensive operations in render methods.
+
+
+What are synthetic events in React?
+Synthetic events combine the response of different browser's native events into one API, 
+ensuring that the events are consistent across different browsers.
+The application is consistent regardless of the browser it is running in. Here, preventDefault is a synthetic event.

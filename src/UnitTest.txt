@@ -1,0 +1,23 @@
+What are the advantages of using Jest for unit testing?
+A: Jest is a popular testing framework used for unit testing in React. 
+Some advantages of using Jest include its ease of use, fast execution speed, 
+built-in mocking capabilities, support for snapshot testing, and integration with other tools like Enzyme.
+
+What is the difference between shallow rendering and full rendering in React testing?
+A: Shallow rendering only renders the current component without rendering its child components, 
+while full rendering renders the current component along with all its child components. 
+Shallow rendering is faster and more efficient, but may not accurately reflect the behavior of the fully rendered component.
+
+ How do you test asynchronous code in React?
+A: You can test asynchronous code in React by using asynchronous test functions, 
+mocking asynchronous dependencies, or using the async/await syntax.
+
+How do you mock API calls in React unit testing?
+A: To mock API calls in React unit testing, you can use Jest's built-in mocking 
+functionality to create a mock implementation of the API that returns predefined data.
+Alternatively, you can use a mocking library like fetch-mock or axios-mock-adapter to mock API requests and responses.
+
+ How do you test Redux store in React integration testing?
+A6. The Redux store can be tested in React integration testing by creating a test store and dispatching 
+actions to it. This allows developers to test how the application responds to different actions and how the 
+store is updated. The testing can also be done by using tools such as Redux Mock Store to simulate different scenarios and test the behavior of the application.

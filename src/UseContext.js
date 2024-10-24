@@ -4,7 +4,7 @@ import UseContextChild from "./UseContextChild";
 const MyContext = createContext();
 
 function UseContext() {
-  const value = "Hello from Context Parent Compoent ";
+  const value = "Hello from Context Par   ent Compoent ";
   return (
     <div>
       <h1>UseContext</h1>

@@ -1,0 +1,2 @@
+Q1. what are the new features in react 16?
+Alpine.js
