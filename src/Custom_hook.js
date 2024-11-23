@@ -6,7 +6,7 @@ const Custom_hook = () => {
   return (
     <div>
       <h1>Custom_hook</h1>
-      <>
+      <> 
         <input
           type="text"
           placeholder="Enter your name"

@@ -1,0 +1,4 @@
+A middleware in React that enables users to create actions 
+that return a function in exchange for an action.
+
+The super keyword in React helps you access functions on an object’s parent.

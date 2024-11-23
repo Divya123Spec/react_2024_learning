@@ -11,3 +11,8 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+
+// In React, Web Vitals are metrics introduced by Google to measure the user experience 
+// quality of your web application. These metrics focus on aspects such as loading performance, 
+// interactivity, and visual stability. React applications typically use the reportWebVitals file 
+// to gather these metrics

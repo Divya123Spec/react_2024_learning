@@ -1,27 +1,20 @@
 import "./styles.css";
-import React, { useState } from "react";
-import { useReducer, useRef } from "react";
+import React, { useState, useContext, useRef } from "react";
 
-function Start_Stop_Pause() {
+export default function Start_Stop_Pause() {
   const [time, setTime] = useState(0);
   const [running, setRunning] = useState(false);
-  const intervalRef = useRef(null);
 
-  const reducer = (state, action) => {
-    switch (action) {
-    }
-  };
+  const intervalRef = useRef();
 
   const startTime = () => {
-    console.log(startTime);
     if (!running) {
       setRunning(true);
       intervalRef.current = setInterval(() => {
-        setTime((prevTime) => prevTime + 1);
+        setTime((prev) => prev + 1);
       }, 1000);
     }
   };
-
   const stopTime = () => {
     clearInterval(intervalRef.current);
     setRunning(false);
@@ -29,30 +22,33 @@ function Start_Stop_Pause() {
 
   const pauseTime = () => {
     if (running) {
-      // If the timer is running, we can pause it
-      clearInterval(intervalRef.current); // Clear the interval
-      setRunning(false); // Set running to false to indicate it's paused
+      clearInterval(intervalRef.current);
+      setRunning(false);
     }
   };
 
-  const formatTime = (timer) => {
-    const seconds = 60;
-    const mint = Math.floor(timer / 60);
-    const remainingTime = timer % 60;
-    return `${mint + ":" + remainingTime}`;
+  const formatDate = (timer) => {
+    const hours = Math.floor(timer / 3600);
+    const mints = Math.floor((timer % 3600) / 60);
+    const seconds = Math.floor(timer % 60);
+
+    const formatHr = String(hours).padStart(2, "0");
+    const formatmint = String(mints).padStart(2, "0");
+    const formatSec = String(seconds).padStart(2, "0");
+
+    return `${formatHr} : ${formatmint}: ${formatSec}`;
   };
+
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
-
-      <p> MM:SS{formatTime(time)}</p>
-      <button onClick={startTime}> Start</button>
-
-      <button onClick={stopTime}> Stop </button>
-
-      <button onClick={pauseTime}> Pause</button>
+      <div>
+        <p>{formatDate(time)}</p>
+        <button onClick={startTime}>Start</button>
+        <button onClick={stopTime}>Stop</button>
+        <button onClick={pauseTime}>Pause</button>
+      </div>
     </div>
   );
 }
-export default Start_Stop_Pause;

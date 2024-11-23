@@ -54,7 +54,7 @@ export default Hook_useeffect;
 // useEffect is a function that takes two arguments: a function and an array of dependencies.
 // example
 // for example fetching data from an api, updating the DOM directly, etc.
-// any other operations that needs to be performed after the component has been rendered
+// any other operations that needs to  component has been rendered
 
 // what is dependency array?
 // The second argument of useEffect is an array of dependencies.
